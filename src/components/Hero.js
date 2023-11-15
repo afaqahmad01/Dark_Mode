@@ -35,6 +35,7 @@ const Hero = () => {
   return (
     <section className="min-h-[740px] w-full bg-heroLight bg-cover bg-center bg-no-repeat overflow-hidden dark:bg-heroDark">
       <div className="container mx-auto px-4 lg:px-0">
+        {/* header */}
         <header className="flex items-center justify-between py-8">
           <div>
             <a href="#">
@@ -45,6 +46,8 @@ const Hero = () => {
               )}
             </a>
           </div>
+
+          {/* button */}
           <button
             onClick={handleThemeSwitch}
             className="p-4 bg-accent text-white rounded-full w-12 h-12 flex justify-center"
@@ -52,7 +55,9 @@ const Hero = () => {
             {theme === "light" ? <BsMoonFill /> : <BsFillSunFill />}
           </button>
         </header>
+
         <div className="flex flex-col items-center lg:flex-row min-h-[740px]">
+          {/* text and image wrapper */}
           <div className="flex-1 flex flex-col items-start">
             <h1 className="text-5xl text-primary font-bold mb-6 leading-[60px] dark:text-white">
               Online Accounting <br />
@@ -63,26 +68,35 @@ const Hero = () => {
               bureaucracy, creating a modern relationship between your comapany
               and the accountant.
             </p>
+            {/* check itmes  */}
             <div className="flex flex-col gap-y-6 mb-12">
+              {/* items */}
               <div className="flex items-center gap-x-2">
+                {/* items icon */}
                 <div className="bg-accent/10 text-accent w-[20px] h-[20px] rounded-full flex justify-center items-center dark:bg-accent/70 dark:text-white ">
                   <BsCheck />
                 </div>
+                {/* items text */}
                 <p className="text-base font-light dark:text-white">
                   Have your accounting 100% online.
                 </p>
               </div>
+              {/* items */}
               <div className="flex items-center gap-x-2">
+                {/* items icon */}
                 <div className="bg-accent/10 text-accent w-[20px] h-[20px] rounded-full flex justify-center items-center dark:bg-accent/70 dark:text-white ">
                   <BsCheck />
                 </div>
+                {/* items text */}
                 <p className="text-base font-light dark:text-white">
                   Save with plans strting at $10/month.
                 </p>
               </div>
             </div>
+
             <button className="btn">Discover your plans</button>
           </div>
+
           <div className="hidden lg:flex self-end">
             <img src={GirlImage} />
           </div>
