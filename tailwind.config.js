@@ -1,29 +1,31 @@
 module.exports = {
-  content: ['./src/**/*.{html,js}'],
+  darkMode: "class",
+
+  content: ["./src/**/*.{html,js}"],
   theme: {
     fontFamily: {
-      primary: 'Rubik',
+      primary: "Rubik",
     },
     container: {
       padding: {
-        DEFAULT: '1rem',
-        lg: '0',
+        DEFAULT: "1rem",
+        lg: "0",
       },
     },
     screens: {
-      sm: '640px',
-      md: '768px',
-      lg: '1224px',
-      xl: '1350px',
+      sm: "640px",
+      md: "768px",
+      lg: "1224px",
+      xl: "1350px",
     },
     extend: {
       colors: {
-        primary: '#232129',
+        primary: "#232129",
         accent: {
-          DEFAULT: '#6738E1',
-          hover: '#5A26DF',
+          DEFAULT: "#6738E1",
+          hover: "#5A26DF",
         },
-        grey: '#494455',
+        grey: "#494455",
       },
       backgroundImage: {
         heroLight: "url('/src/assets/img/bg-light.svg')",
